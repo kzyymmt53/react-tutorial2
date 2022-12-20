@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <AddUser />
-      <UserList />
+      <UserList users={[]}/>
     </div>
   );
 }
