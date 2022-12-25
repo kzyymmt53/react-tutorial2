@@ -14,6 +14,7 @@ const Login = (props) => {
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value);
 
+
     useEffect(() => {
       const identifier = setTimeout(() => {
         setFormIsValid(
