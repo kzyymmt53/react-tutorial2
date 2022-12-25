@@ -6,6 +6,7 @@ import Button from '../UI/Button/Button';
 
 const emailReducer = (state, action) => { 
   if (action.type === "USER_INPUT") {
+    
     return { value: action.val, isValid: action.val.includes('@') };
   }
   if (action.type === "INPUT_BLUR") {
@@ -56,6 +57,8 @@ const Login = (props) => {
    useEffect(() => {
      const identifier = setTimeout(() => {
        console.log('Checking form validity!');
+       console.log(emailIsValid);
+       console.log(passwordIsValid);
        setFormIsValid(
          emailIsValid && passwordIsValid
        );
@@ -76,7 +79,8 @@ const Login = (props) => {
   };
 
   const passwordChangeHandler = (event) => {
-    dispatchPassword({ type: 'INPUT_BLUR', val: event.target.value });
+    console.log(event.target.value);
+    dispatchPassword({ type: 'USER_INPUT', val: event.target.value });
 
     //setFormIsValid(
     //  emailState.isValid && event.target.value.trim().length > 6
