@@ -1,8 +1,13 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useImperativeHandle } from "react";
 import classes from "./Input.module.css";
 
-const Input = (props) => {
-  const inputRef = useRef();
+const Input = React.forwardRef((props, ref) => {
+    const inputRef = useRef();
+    useImperativeHandle(ref, () => {
+        return {
+            focus: activate,
+        }
+     });
   const activate = () => {
     inputRef.current.focus();
   };
@@ -23,6 +28,6 @@ const Input = (props) => {
       />
     </div>
   );
-};
+});
 
 export default Input;
