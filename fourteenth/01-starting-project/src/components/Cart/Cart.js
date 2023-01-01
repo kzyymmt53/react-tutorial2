@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useDebugValue, useState } from 'react';
 
 import Modal from '../UI/Modal';
 import CartItem from './CartItem';
@@ -40,6 +40,14 @@ const Cart = (props) => {
     setIsCheckout(true);
   };
 
+  const submitOrderHandler = (useData) => {
+    fetch('url', {
+      method: "POST",
+      body: JSON.stringify(useData),
+      orderedItems: cartCtx.items,
+    });
+  } 
+
   const modalActions = <div className={classes.actions}>
     <button className={classes['button--alt']} onClick={props.onClose}>
       Close
@@ -54,7 +62,7 @@ const Cart = (props) => {
         <span>Total Amount</span>
         <span>{totalAmount}</span>
       </div>
-      {isCheckout && <Checkout onCancel={props.onClose}/>}
+      {isCheckout && <Checkout onCancel={props.onClose} onConfirm={submitOrderHandler}/>}
       {!isCheckout && modalActions}
       
     </Modal>
