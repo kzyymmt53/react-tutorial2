@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     if (initial) {
-      initial = false;
+      initial = false;  
       return;
     }
     //カートの中身をバックエンドに送る
