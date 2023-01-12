@@ -1,6 +1,9 @@
+import { useRouter} from 'next/router';
 // domain.com/news/something-important
 
 function DetailPage() {
+    const counter = useRouter();
+    const newsId = router.query.newsId;
     return <h1>DetailPage</h1>
 }
 
