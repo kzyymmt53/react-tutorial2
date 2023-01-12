@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../ssr-module-cache.js');
+/******/ 	var installedModules = require('../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,20 +88,20 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/news/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./pages/news/somthing-important.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/news/index.js":
-/*!*****************************!*\
-  !*** ./pages/news/index.js ***!
-  \*****************************/
+/***/ "./pages/news/somthing-important.js":
+/*!******************************************!*\
+  !*** ./pages/news/somthing-important.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nvar _jsxFileName = \"/Users/yamamotok96/react_tutorial2/react-tutorial2/nextjstest/01-starting-project/pages/news.js\";\n\n// domain.com/news\nfunction NewsPage() {\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"h1\", {\n    children: \"NewsPage\"\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 4,\n    columnNumber: 12\n  }, this);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (NewsPage);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9uZXdzLmpzPzJhYmYiXSwibmFtZXMiOlsiTmV3c1BhZ2UiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBO0FBRUEsU0FBU0EsUUFBVCxHQUFvQjtBQUNoQixzQkFBTztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQUFQO0FBQ0g7O0FBRWNBLHVFQUFmIiwiZmlsZSI6Ii4vcGFnZXMvbmV3cy9pbmRleC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIGRvbWFpbi5jb20vbmV3c1xuXG5mdW5jdGlvbiBOZXdzUGFnZSgpIHtcbiAgICByZXR1cm4gPGgxPk5ld3NQYWdlPC9oMT5cbn1cblxuZXhwb3J0IGRlZmF1bHQgTmV3c1BhZ2U7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/news/index.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nvar _jsxFileName = \"/Users/yamamotok96/react_tutorial2/react-tutorial2/nextjstest/01-starting-project/pages/news/somthing-important.js\";\n\n// domain.com/news/something-important\nfunction DetailPage() {\n  return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__[\"jsxDEV\"])(\"h1\", {\n    children: \"DetailPage\"\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 4,\n    columnNumber: 12\n  }, this);\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (DetailPage);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9uZXdzL3NvbXRoaW5nLWltcG9ydGFudC5qcz8yMWU4Il0sIm5hbWVzIjpbIkRldGFpbFBhZ2UiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBO0FBRUEsU0FBU0EsVUFBVCxHQUFzQjtBQUNsQixzQkFBTztBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQUFQO0FBQ0g7O0FBRWNBLHlFQUFmIiwiZmlsZSI6Ii4vcGFnZXMvbmV3cy9zb210aGluZy1pbXBvcnRhbnQuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBkb21haW4uY29tL25ld3Mvc29tZXRoaW5nLWltcG9ydGFudFxuXG5mdW5jdGlvbiBEZXRhaWxQYWdlKCkge1xuICAgIHJldHVybiA8aDE+RGV0YWlsUGFnZTwvaDE+XG59XG5cbmV4cG9ydCBkZWZhdWx0IERldGFpbFBhZ2U7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/news/somthing-important.js\n");
 
 /***/ }),
 
