@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import Head from "next/head";
+import { Fragment, useEffect, useState } from "react";
 import MeetupList from "../components/meetups/MeetupList";
 
 const DUMMY_MEETUPS = [
@@ -20,17 +21,26 @@ const DUMMY_MEETUPS = [
   },
 ];
 function HomePage(props) {
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <Fragment>
+      <Head>
+              <title>React Meetups</title>
+              <meta name="description" content="aaaa" /> 
+      </Head>
+      <MeetupList meetups={props.meetups} />
+    </Fragment>
+  );
 }
 
 export async function getStaticProps() {
-    //fetch data from an Api
-    return {
-        props: {
-            meetups: DUMMY_MEETUPS
-        },
-        revalidate: 10,
-    };
+  //fetch data from an Api
+
+  return {
+    props: {
+      meetups: DUMMY_MEETUPS,
+    },
+    revalidate: 10,
+  };
 }
 
 /*export async function getServerSideProps(context) {
