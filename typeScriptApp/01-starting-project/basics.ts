@@ -20,3 +20,6 @@ person = {
     name: "max",
     age: 32,
 };
+
+//Type inference
+let course = 'React - The Complete Course';
