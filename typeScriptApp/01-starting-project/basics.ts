@@ -7,5 +7,16 @@ userName = "Max";
 let isInstructor: boolean;
 isInstructor = true;
 
-let hobbies: null;
+let hobbies: string[];
 
+hobbies = ['Sports', 'Cooking'];
+
+let person: {
+    name: string;
+    age: number;
+};
+
+person = {
+    name: "max",
+    age: 32,
+};
