@@ -11,10 +11,13 @@ let hobbies: string[];
 
 hobbies = ['Sports', 'Cooking'];
 
-let person: {
+type Person = {
     name: string;
     age: number;
 };
+
+let person: Person;
+let people: Person[];
 
 person = {
     name: "max",
