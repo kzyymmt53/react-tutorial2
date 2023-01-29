@@ -1,7 +1,7 @@
 let age: number;
 age = 12;
 
-let userName: string;
+let userName: string | string[];
 userName = "Max";
 
 let isInstructor: boolean;
@@ -22,4 +22,5 @@ person = {
 };
 
 //Type inference
-let course = 'React - The Complete Course';
+let course: string | number = 'React - The Complete Course';
+course = 1234;
